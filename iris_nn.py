@@ -21,9 +21,13 @@ for i in range(N):
     Y2[i,Y[i]] = 1.0
 
 index = np.arange(N)
+# Xの奇数行をxtrainとする
 xtrain = X[index[index % 2 != 0],:]
+# Y2の奇数行をytrainとする
 ytrain = Y2[index[index % 2 != 0],:]
+# Xの偶数行をxtestとする
 xtest = X[index[index % 2 == 0],:]
+# Yの偶数行をyansとする
 yans = Y[index[index % 2 == 0]]
 
 train = tuple_dataset.TupleDataset(xtrain, ytrain)
