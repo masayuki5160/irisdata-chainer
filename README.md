@@ -16,7 +16,7 @@ $ cd irisdata-chainer/
 $ python iris_nn.py
 
 # logistic regression
-$ iris_logistic.py
+$ python iris_logistic.py
 ```
 
 # Appendix
