@@ -9,7 +9,12 @@ $ docker build -t masayuki5160/iris-chainer .
 # Start Docker container
 $ docker run -it masayuki5160/iris-chainer /bin/bash
 $ cd irisdata-chainer/
-$ python iris.py
+
+# neural network
+$ python iris_nn.py
+
+# logistic regression
+$ iris_logistic.py
 ```
 
 # Appendix
