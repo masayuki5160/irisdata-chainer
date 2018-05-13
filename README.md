@@ -1,5 +1,7 @@
 # irisdata-chainer
 
+Predict iris species using Chainer.
+
 # Usage
 
 ```
