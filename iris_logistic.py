@@ -74,3 +74,6 @@ for i in range(nrow):
         
 print ok, "/", nrow, " = ", (ok * 1.0)/nrow
 
+# Save model
+model.to_cpu()
+serializers.save_npz("iris_logistic.npz", model)
