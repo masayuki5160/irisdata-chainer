@@ -2,15 +2,23 @@
 
 Predict iris species using Chainer.
 
+# env
+
+- Docker version 18.03.1-ce, build 9ee9f40
+
 # Usage
 
 ```
+# Clone repository
+$ git clone git@github.com:masayuki5160/irisdata-chainer.git
+$ cd irisdata-chainer/
+
 # Build Docker image
 $ docker build -t masayuki5160/iris-chainer .
 
 # Start Docker container
-$ docker run -it masayuki5160/iris-chainer /bin/bash
-$ cd irisdata-chainer/
+$ docker run -v $(pwd):/home/irisdata-chainer/ -it masayuki5160/iris-chainer /bin/bash 
+$ cd /home/irisdata-chainer
 
 # neural network
 $ python iris_nn.py

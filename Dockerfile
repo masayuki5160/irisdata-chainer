@@ -1,6 +1,6 @@
 FROM chainer/chainer:latest
 
-COPY . /irisdata-chainer
+VOLUME /home/irisdata-chainer
 
 RUN apt-get update && \
     apt-get -y install vim && \
