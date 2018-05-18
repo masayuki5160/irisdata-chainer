@@ -2,7 +2,7 @@
 
 Predict iris species using Chainer.
 
-# env
+# Env
 
 - Docker version 18.03.1-ce, build 9ee9f40
 
@@ -22,9 +22,13 @@ $ cd /home/irisdata-chainer
 
 # neural network
 $ python iris_nn.py
+# use model(iris_nn.npz)
+$ python load_nn.py 
 
 # logistic regression
 $ python iris_logistic.py
+# use model(iris_logistic.npz)
+$ python iris_logistic.py 
 ```
 
 # Appendix
